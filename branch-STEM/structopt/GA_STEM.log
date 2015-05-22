@@ -1,0 +1,154 @@
+======= MAST/structopt
++++ MAST/structopt/Optimizer.py
+# if 'stem' in parameters['fitness_scheme']: read in function 'PSF.txt'
+# scatter and gather only indivual class
+
+
+======= MAST/structopt/crossover/
++++ MAST/structopt/crossover/rotct_rand.py
+# set up cut and splice only along z for specific clusters
+# if Optimizer.forcing == 'FreeNatom':
+
+
+======= MAST/structopt/fitness/
++++ MAST/structopt/fitness/stem_cost.py
+# tests only on clusters
+
++++ MAST/structopt/fitness/totalenfit.py
+# read in Optimizer.energy_cutoff_factor to exclude structures with too lower energies 
+
+
+======= MAST/structopt/generate/
++ MAST/structopt/generate/gen_pop_ellipsoid.py
+
+- MAST/structopt/generate/gen_pop_plate_v0.py
++ hko: MAST/structopt/generate/gen_pop_plate.py
++++ MAST/structopt/generate/defect/get_defect_indiv.py 
+# HKK: L80 if 'plate' in Optimizer.generate_flag
++ hko: MAST/structopt/generate/rot_vec.py
+
++++ MAST/structopt/generate/get_restart_population.py
+# Now second line of indivxx.xyz file contains cell info. Box size is not fixed through evolution. 
+# L48,50 only set_cell when box size is not read in.
+
++++ MAST/structopt/generate/Individual.py 
+# new list: hpealist and lpealist to store atom index with highest or lowest potential energies.
+# for using in class Individual through evolution
+
+
+======= MAST/structopt/inp_out/
++++ MAST/structopt/inp_out/read_parameter_input.py
+# 'lammps_command' in parameters
+
+- MAST/structopt/inp_out/read_xyz_v0.py
++ MAST/structopt/inp_out/read_xyz.py
+# new version is more efficient to read in one strucutre from xyz file  
+# new version also reads in cell info from xyz file
+
++++ MAST/structopt/inp_out/write_pop.py
+# write pop every 10 steps: if Optimizer.generation % 10 == 0
+
++++ MAST/structopt/inp_out/write_xyz.py
+# write cell info into xyz file
+
+
+======= MAST/structopt/moves
++ MAST/structopt/moves/atoms_remove_surf.py
+# remove surface atoms, used for cluster optimization when central atoms are already settled.
+
+Only in MAST/structopt/moves: pea_rd_mutation.py
+Only in MAST/structopt/moves: rotation_110.py
+Only in MAST/structopt/moves: stem_add.py
+
++ MAST/structopt/moves: stem_mutation.py
+# calculate the STEM intensity delta = simfun - expfun
+# move atoms from positive delta to negative delta pixels 
+
++ MAST/structopt/moves/stem_add.py
+# calculate the STEM intensity delta = simfun - expfun
+# add atoms to negative delta columns, total number of atoms is not fixed
+# Note: when comparing STEM intensities, may need shifting and matching exp and simulation images. 
+
++ MAST/structopt/moves/stem_remove.py
+# calculate the STEM intensity delta = simfun - expfun
+# remove atoms to positive delta columns, total number of atoms is not fixed
+# Note: when comparing STEM intensities, may need shifting and matching exp and simulation images.
+
++ MAST/structopt/moves/stem_shift.py
+# simutaneouly shift a number of atomic columns along z dir 
+# leads to a different strucutre with same STEM intensity
+
++ MAST/structopt/moves/swap_species.py
+# for systems with more than one type of atoms
+# randomly pick a number of type one and same amount of type two
+# swap these two types of atoms
+
++ MAST/structopt/moves/pea_rd_mutation.py
+# move atoms with high potential energies randomly
+# speed up local minimization
+
++ MAST/structopt/moves/swap_species_pea.py
+# swap two types of atoms within high potential energy list
+# speed up local minimization
+
++ MAST/structopt/moves/swap_cluster.py
+# swap two cluster of atoms with central atom in low potentail energy list
+
++++ MAST/structopt/moves/cell_relax_lammps.py
+# LAMMPS running dir and calculator setup updated 
+
++++ MAST/structopt/moves/lattice_alteration.py
+# reduce random moves to at most 1/50 of atoms
+
++++ MAST/structopt/moves/lattice_alteration_rdrd.py
+# reduce random moves to at most 1/50 of atoms by a distance between 0.3 ang and max length of structure.
+
+- MAST/structopt/moves/rotation_v0.py
++ MAST/structopt/moves/rotation.py
+# if Optimizer.forcing == 'FreeNatom', only rotate along z dir 
+
++++ MAST/structopt/moves/zp_rotation.py
+# if Optimizer.forcing == 'FreeNatom', only rotate along z dir
+
+
+======= MAST/structopt/switches/
++++ MAST/structopt/switches/fitness_switch.py
+# read in Optimizer
+
+
+======= MAST/structopt/tools
+
++++ MAST/structopt/tools/BestInds.py
+# set writing out indiv every 10 steps
+
++++ MAST/structopt/tools/eval_energy.py
+# turn off setting cell if Optimizer.forcing == 'RelaxBox'
+# run run_energy_eval, return atomic potential energy 'pea' as well
+# def sort_pealist (new function)
+# 1. exclude structures if any pea is 5.0eV away from readin potential energies in Optimizer.atomlist
+# 2. sort pea, then create hpealist and lpealist to individual class
+# def check_min_dist
+# 1. new function is faster on checking and adjusting atoms with too close distance.
+# 2. cluster strucuture: If Optimizer.forcing == 'EllipoidShape' or Optimizer.forcing == 'FreeNatom'
+#    adjust atoms flying too far away from cluster
+#    Note: some structure parameters are set in code and need to be modified case-dependently.
+
++++ MAST/structopt/tools/setup_calculator.py
+# Optimizer.lammps_command
+
++++ MAST/structopt/tools/StemCalc.py
+# both PSF function 'PSF.txt' and Exp_Image are prepared beforehand
+# Note: current code had some parameters related to exp. pixel size. They are case dependent.
+# For example, L599 com= to shift and match simulated with exp STEM
+# and should be able to adjust based on input parameters
+# input parameters['Exp_Image','Grid_sim2exp','Pixels','Pixelshift']  
+
+- MAST/structopt/tools/lammps_v0.py
++ MAST/structopt/tools/lammps.py
+# calculate pea, dump into trj file, read in function read_lammps_trj, return as in a dict in function calculate
+# need set specorder, otherwise LAMMPS running may be messed up with wrong order of atomic species.
+# def write_lammps_in: if 'lammps_command' in parameters, first run minimization, then minimizing with relaxed box.
+# def read_lammps_trj: read pea and cell size
+
+
+
