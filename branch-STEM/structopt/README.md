@@ -9,7 +9,7 @@ General Structure Optimization code
 
 GA_STEM.log: includes updates and explanation of current structopt version  
 
-STEM example:
+STEM example in examples/STEM/ 
 
 Au_u3.eam: potential file
 
