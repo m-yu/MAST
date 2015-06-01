@@ -56,10 +56,6 @@
 + MAST/structopt/moves/atoms_remove_surf.py
 # remove surface atoms, used for cluster optimization when central atoms are already settled.
 
-Only in MAST/structopt/moves: pea_rd_mutation.py
-Only in MAST/structopt/moves: rotation_110.py
-Only in MAST/structopt/moves: stem_add.py
-
 + MAST/structopt/moves: stem_mutation.py
 # calculate the STEM intensity delta = simfun - expfun
 # move atoms from positive delta to negative delta pixels 
