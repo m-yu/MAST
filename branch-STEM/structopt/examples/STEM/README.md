@@ -11,12 +11,16 @@ STEM_run.py: set up parameters for simualtion
 
 submit.sh: submit script
 
+
 Output files for GA+STEM simulation
 -----------------------------------
 
+Output-rank0.txt: main output file, include all information through evolution 
+
 Output.txt: from 2 to 5 cols: generation #; fitness function; energy per atom in eV; alpha*chi2
 
-Output-rank0.txt: main output file 
+Output-rank0/Summary-Output.txt: summary of fitness evolution and computing cost 
+
 
 Visulization
 ------------
