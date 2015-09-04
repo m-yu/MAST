@@ -41,7 +41,7 @@ if rank==0:
      'tolerance': 0.01,
      'r_ab': 2.5, 'size': 23.0,
      'cxpb': 0.8, 'mutpb': 0.2, 'cx_scheme': 'cxtp', #rotct_rand', 
-     'mutation_options': ['lattice_alteration','lattice_alteration_group','rotation','zp_rotation'],
+     'mutation_options': ['lattice_alteration','lattice_alteration_group','rotation','stem_mutation','zp_rotation'],
      'selection_scheme': 'tournament2', 'natural_selection_scheme': 'fuss', 'tournsize': 3, 'fusslimit': 10,
      'convergence_scheme': 'gen-rep-min', 'fingerprinting': False, 'predator': 'fitpred', 'demin': 0.05,
      'pair_style': 'eam', 'pot_file': 'Au_u3.eam',
