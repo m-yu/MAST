@@ -13,6 +13,6 @@ submit.sh: submit script
 
 
 Visulization
-============
+------------
 
 image.py: readin a strucutre (xyz format) and precalculated PSF, simulate STEM image using convolution method.  
