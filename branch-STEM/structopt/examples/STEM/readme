@@ -1,3 +1,5 @@
+# Required files for GA+STEM simulation 
+
 Au_u3.eam: potential file
 
 PSF.txt: pre-calculated PSF, 976 x 976 pixels  
