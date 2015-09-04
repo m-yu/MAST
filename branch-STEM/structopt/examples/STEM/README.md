@@ -1,4 +1,4 @@
-Required files for GA+STEM simulation 
+Input files for GA+STEM simulation 
 -------------------------------------
 
 Au_u3.eam: EAM potential file
