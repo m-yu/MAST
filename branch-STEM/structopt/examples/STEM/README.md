@@ -16,6 +16,7 @@ Output files for GA+STEM simulation
 
 Output.txt: from 2 to 5 cols: generation #; fitness function; energy per atom in eV; alpha*chi2
 
+Output-rank0.txt: main output file 
 
 Visulization
 ------------
