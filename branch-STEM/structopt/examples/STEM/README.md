@@ -11,6 +11,11 @@ STEM_run.py: set up parameters for simualtion
 
 submit.sh: submit script
 
+Output files for GA+STEM simulation
+-----------------------------------
+
+Output.txt: from 2 to 5 cols: generation #; fitness function; energy per atom in eV; alpha*chi2
+
 
 Visulization
 ------------
