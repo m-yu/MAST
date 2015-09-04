@@ -1,0 +1,2520 @@
+-----StructOpt - Global Structure Optimization Run----
+StructOpt_v0.4
+Local time : 'Sun Sep 28 16:44:21 2014'
+
+--------------------
+General Algorithm Information
+
+Algorithm Performed in parallel
+Algorithm type : lambda+mu
+Type of structure to optimize (structure) = 'Cluster'
+Random number seed = 5
+Concentration in individual held constant through crossover
+Structure Fingerprinting (fingerprinting) : False
+
+--------------------
+Population Generation Parameters
+
+Number of structures in population (nindiv) : 60
+Starting structure configuration (atomlist) : [('Au', 309, 196.9665, 0.0)]
+Number of atoms in initial structure (natoms) : 309
+Starting structure size (size) : 23.0
+Average distance between atoms (r_ab) : 2.5
+Generation flag type = 'sphere'
+
+--------------------
+Crossover Configuration Parameters
+
+Crossover probability (cxpb) : 0.8
+Crossover scheme (cx_scheme) : 'cxtp'
+Parent selection scheme (selection_scheme) : 'tournament2'
+    Tournament Size (tournsize) : 3
+
+--------------------
+Mutation Configuration Parameters
+
+Mutation Probability (mutpb) : 0.2
+Mutation Options (mutation_options) : ['lattice_alteration', 'lattice_alteration_group', 'rotation', 'stem_mutation', 'zp_rotation']
+
+--------------------
+Individual Evaluation Parameters
+
+
+----LAMMPS Input------
+The potential used is 'Au_u3.eam'
+The potential style is 'eam'
+Lammps minimizer used '1e-8 1e-8 5000 10000''cg\nmin_modify line quadratic'
+LAMMPS box size for periodic evaluation = 500.0
+
+--------------------
+Selection Parameters
+
+Fitness Scheme (fitness_scheme) : 'stem_cost'
+Parameters for Convoluation AutoSTEM calculation:
+{'Delta E': 0.73, 'Grid_sim2exp': 1, 'aber': [[0, 0], [0, 0], [22.56, -20.1], [22.08, -7.5], [0.1198, 0], [0.9018, -170.1], [0.04964, 20.9], [28.43, -120.6], [11.84, 153.8], [8.456, 76.1], [0.622, 0], [2.811, -125.5]], 'Exp_Image': array([[ 0.01835423,  0.01835783,  0.01836481, ...,  0.01836325,
+         0.01835703,  0.01835399],
+       [ 0.01835744,  0.01836112,  0.01836819, ...,  0.01836611,
+         0.01836001,  0.01835709],
+       [ 0.01836608,  0.01837003,  0.01837732, ...,  0.01837382,
+         0.01836806,  0.01836544],
+       ..., 
+       [ 0.01837733,  0.01838163,  0.01838923, ...,  0.01838381,
+         0.0183785 ,  0.01837631],
+       [ 0.0183642 ,  0.0183681 ,  0.01837536, ...,  0.01837212,
+         0.01836629,  0.01836362],
+       [ 0.01835649,  0.01836016,  0.0183672 , ...,  0.01836525,
+         0.01835912,  0.01835617]]), 'Defocus': 0, 'Source size': 0.882, 'Scale Factor': 0.00570113, 'Chromatic aberration Coefficient': 1.4, 'Aperture semiangle': 24.5, 'Spherical aberration': 1.4, 'Slice size': 25.0, 'Electron energy': 200, 'Pixels': 976, 'Pixelshift': False}
+Keep STEM simulated images = False
+STEM alpha coefficient = 10.0
+Natural Selection Scheme (natural_selection_scheme): 'fuss'
+FUSS limit (fusslim) : 10.0 eV 
+
+--------------------
+Convergence Parameters
+
+Population convergence scheme (CONVERGENCE_SCHEME) : 'gen-rep-min'
+Maximum number of generation (maxgen) = 5000
+Required generation of repetition of energy for convergence (reqrep) = 10
+Energy cutoff for repetition (tolerance) : 0.01
+Duplicate structure convergence control scheme (predator) 'fitpred'
+Minimum energy difference for duplicate consideration (demin) : 0.05
+
+--------------------
+Output and Post-Processing Parameters
+
+Structure atoms filename (filename) : Au309_STEM/Decahedron/Output
+Summary filename : 'Au309_STEM/Decahedron/Output-rank0/Summary-Output.txt'
+Format for summary file (output_format) : 'fitness'
+Genealogy File name : 'Au309_STEM/Decahedron/Output-rank0/Genealogy-Output.txt'
+All Energy file written 
+Vacancies output to final structures : False
+
+-------- Generation 0 --------
+
+----Initialize Structures----
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+Generated cluster individual with natoms = 309
+
+---Starting Structures---
+
+--New Population--
+Individual 0
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 0
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 1
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 1
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 2
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 2
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 3
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 3
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 4
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 4
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 5
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 5
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 6
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 6
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 7
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 7
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 8
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 8
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 9
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 9
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 10
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 10
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 11
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 11
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 12
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 12
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 13
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 13
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 14
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 14
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 15
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 15
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 16
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 16
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 17
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 17
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 18
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 18
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 19
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 19
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 20
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 20
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 21
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 21
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 22
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 22
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 23
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 23
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 24
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 24
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 25
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 25
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 26
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 26
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 27
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 27
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 28
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 28
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 29
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 29
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 30
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 30
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 31
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 31
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 32
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 32
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 33
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 33
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 34
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 34
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 35
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 35
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 36
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 36
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 37
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 37
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 38
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 38
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 39
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 39
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 40
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 40
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 41
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 41
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 42
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 42
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 43
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 43
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 44
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 44
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 45
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 45
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 46
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 46
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 47
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 47
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 48
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 48
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 49
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 49
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 50
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 50
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 51
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 51
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 52
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 52
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 53
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 53
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 54
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 54
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 55
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 55
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 56
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 56
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 57
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 57
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 58
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 58
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+Individual 59
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[False, False, False])
+    Genealogy = 59
+    Energy = 0
+    Fitness = 0
+Number of positions = 309
+
+--Evaluate Structures--
+Evaluating individual 0
+Evaluated individual 0 on 0
+----Individual 0 Optimization----
+Energy per atom = -3.62386148867
+Individual '0': Fitness -0.095402070766633873, Energy/atom -3.6238614886731395, Chi^2 0.35284594179065054, Alpha 10.0
+Evaluating individual 1
+Evaluated individual 1 on 1
+----Individual 1 Optimization----
+Energy per atom = -3.62695469256
+Individual '1': Fitness -0.39422239387114644, Energy/atom -3.6269546925566343, Chi^2 0.32327322986854878, Alpha 10.0
+Evaluating individual 2
+Evaluated individual 2 on 2
+----Individual 2 Optimization----
+Energy per atom = -3.62711359223
+Individual '2': Fitness -0.6367470828059334, Energy/atom -3.6271135922330098, Chi^2 0.29903665094270765, Alpha 10.0
+Evaluating individual 3
+Evaluated individual 3 on 3
+----Individual 3 Optimization----
+Energy per atom = -3.62165469256
+Individual '3': Fitness 0.19530010159620526, Energy/atom -3.6216546925566346, Chi^2 0.38169547941528398, Alpha 10.0
+Evaluating individual 4
+Evaluated individual 4 on 4
+----Individual 4 Optimization----
+Energy per atom = -3.62415113269
+Individual '4': Fitness -0.18946072425511717, Energy/atom -3.624151132686084, Chi^2 0.34346904084309665, Alpha 10.0
+Evaluating individual 5
+Evaluated individual 5 on 5
+----Individual 5 Optimization----
+Energy per atom = -3.61986990291
+Individual '5': Fitness -0.44885451855446945, Energy/atom -3.6198699029126216, Chi^2 0.31710153843581523, Alpha 10.0
+Evaluating individual 6
+Evaluated individual 6 on 6
+----Individual 6 Optimization----
+Energy per atom = -3.61727475728
+Individual '6': Fitness -0.16015550502714193, Energy/atom -3.6172747572815536, Chi^2 0.34571192522544114, Alpha 10.0
+Evaluating individual 7
+Evaluated individual 7 on 7
+----Individual 7 Optimization----
+Energy per atom = -3.62429676375
+Individual '7': Fitness -0.54363589991435823, Energy/atom -3.624296763754045, Chi^2 0.30806608638396871, Alpha 10.0
+Evaluating individual 8
+Evaluated individual 8 on 8
+----Individual 8 Optimization----
+Energy per atom = -3.6217618123
+Individual '8': Fitness -0.24705991306253017, Energy/atom -3.621761812297734, Chi^2 0.3374701899235204, Alpha 10.0
+Evaluating individual 9
+Evaluated individual 9 on 9
+----Individual 9 Optimization----
+Energy per atom = -3.62042880259
+Individual '9': Fitness 0.037439918657417248, Energy/atom -3.620428802588997, Chi^2 0.36578687212464145, Alpha 10.0
+Evaluating individual 10
+Evaluated individual 10 on 10
+----Individual 10 Optimization----
+Energy per atom = -3.62465307443
+Individual '10': Fitness -0.15496314588081539, Energy/atom -3.6246530744336574, Chi^2 0.34696899285528421, Alpha 10.0
+Evaluating individual 11
+Evaluated individual 11 on 11
+----Individual 11 Optimization----
+Energy per atom = -3.62129644013
+Individual '11': Fitness -0.12098806822268005, Energy/atom -3.6212964401294503, Chi^2 0.35003083719067701, Alpha 10.0
+Evaluating individual 12
+Evaluated individual 12 on 12
+----Individual 12 Optimization----
+Energy per atom = -3.62658899676
+Individual '12': Fitness -0.010856088107277007, Energy/atom -3.626588996763754, Chi^2 0.36157329086564771, Alpha 10.0
+Evaluating individual 13
+Evaluated individual 13 on 13
+----Individual 13 Optimization----
+Energy per atom = -3.62973333333
+Individual '13': Fitness -0.62379176825778471, Energy/atom -3.6297333333333337, Chi^2 0.30059415650755489, Alpha 10.0
+Evaluating individual 14
+Evaluated individual 14 on 14
+----Individual 14 Optimization----
+Energy per atom = -3.61616860841
+Individual '14': Fitness -0.094274098647194826, Energy/atom -3.6161686084142395, Chi^2 0.35218945097670445, Alpha 10.0
+Evaluating individual 15
+Evaluated individual 15 on 15
+----Individual 15 Optimization----
+Energy per atom = -3.61654757282
+Individual '15': Fitness -0.5582546337518246, Energy/atom -3.6165475728155343, Chi^2 0.30582929390637098, Alpha 10.0
+Evaluating individual 16
+Evaluated individual 16 on 16
+----Individual 16 Optimization----
+Energy per atom = -3.62533365696
+Individual '16': Fitness -0.065679647660999763, Energy/atom -3.625333656957929, Chi^2 0.35596540092969292, Alpha 10.0
+Evaluating individual 17
+Evaluated individual 17 on 17
+----Individual 17 Optimization----
+Energy per atom = -3.62530194175
+Individual '17': Fitness -0.27931262404218948, Energy/atom -3.6253019417475727, Chi^2 0.33459893177053834, Alpha 10.0
+Evaluating individual 18
+Evaluated individual 18 on 18
+----Individual 18 Optimization----
+Energy per atom = -3.62192038835
+Individual '18': Fitness -0.041013208673946977, Energy/atom -3.621920388349514, Chi^2 0.3580907179675567, Alpha 10.0
+Evaluating individual 19
+Evaluated individual 19 on 19
+----Individual 19 Optimization----
+Energy per atom = -3.6203828479
+Individual '19': Fitness -0.19428951561249397, Energy/atom -3.6203828478964404, Chi^2 0.34260933322839465, Alpha 10.0
+Evaluating individual 20
+Evaluated individual 20 on 20
+----Individual 20 Optimization----
+Energy per atom = -3.62166957929
+Individual '20': Fitness -0.17291517576670934, Energy/atom -3.621669579288026, Chi^2 0.34487544035213163, Alpha 10.0
+Evaluating individual 21
+Evaluated individual 21 on 21
+----Individual 21 Optimization----
+Energy per atom = -3.62221877023
+Individual '21': Fitness -0.22764241506192961, Energy/atom -3.622218770226537, Chi^2 0.33945763551646074, Alpha 10.0
+Evaluating individual 22
+Evaluated individual 22 on 22
+----Individual 22 Optimization----
+Energy per atom = -3.62278867314
+Individual '22': Fitness -0.2851848323268027, Energy/atom -3.622788673139159, Chi^2 0.33376038408123565, Alpha 10.0
+Evaluating individual 23
+Evaluated individual 23 on 23
+----Individual 23 Optimization----
+Energy per atom = -3.6210987055
+Individual '23': Fitness -0.39800013938786361, Energy/atom -3.621098705501618, Chi^2 0.32230985661137546, Alpha 10.0
+Evaluating individual 24
+Evaluated individual 24 on 24
+----Individual 24 Optimization----
+Energy per atom = -3.61762265372
+Individual '24': Fitness 0.45122121316282682, Energy/atom -3.6176226537216825, Chi^2 0.40688438668845095, Alpha 10.0
+Evaluating individual 25
+Evaluated individual 25 on 25
+----Individual 25 Optimization----
+Energy per atom = -3.62255889968
+Individual '25': Fitness -0.016408951650207282, Energy/atom -3.6225588996763753, Chi^2 0.36061499480261683, Alpha 10.0
+Evaluating individual 26
+Evaluated individual 26 on 26
+----Individual 26 Optimization----
+Energy per atom = -3.62881326861
+Individual '26': Fitness 0.04937036741779588, Energy/atom -3.6288132686084142, Chi^2 0.36781836360262099, Alpha 10.0
+Evaluating individual 27
+Evaluated individual 27 on 27
+----Individual 27 Optimization----
+Energy per atom = -3.6287433657
+Individual '27': Fitness -0.0080198074284880683, Energy/atom -3.628743365695793, Chi^2 0.36207235582673047, Alpha 10.0
+Evaluating individual 28
+Evaluated individual 28 on 28
+----Individual 28 Optimization----
+Energy per atom = -3.61818478964
+Individual '28': Fitness 0.15930220110741189, Energy/atom -3.6181847896440127, Chi^2 0.37774869907514247, Alpha 10.0
+Evaluating individual 29
+Evaluated individual 29 on 29
+----Individual 29 Optimization----
+Energy per atom = -3.62481456311
+Individual '29': Fitness -0.12621635261261099, Energy/atom -3.6248145631067965, Chi^2 0.34985982104941854, Alpha 10.0
+Evaluating individual 30
+Evaluated individual 30 on 30
+----Individual 30 Optimization----
+Energy per atom = -3.61829126214
+Individual '30': Fitness 0.015401742947523278, Energy/atom -3.618291262135922, Chi^2 0.36336930050834454, Alpha 10.0
+Evaluating individual 31
+Evaluated individual 31 on 31
+----Individual 31 Optimization----
+Energy per atom = -3.62181618123
+Individual '31': Fitness 0.18864463006738985, Energy/atom -3.6218161812297733, Chi^2 0.38104608112971633, Alpha 10.0
+Evaluating individual 32
+Evaluated individual 32 on 32
+----Individual 32 Optimization----
+Energy per atom = -3.62343268608
+Individual '32': Fitness -0.11471971225924404, Energy/atom -3.623432686084142, Chi^2 0.35087129738248979, Alpha 10.0
+Evaluating individual 33
+Evaluated individual 33 on 33
+----Individual 33 Optimization----
+Energy per atom = -3.62131488673
+Individual '33': Fitness 0.12093850694767871, Energy/atom -3.621314886731392, Chi^2 0.37422533936790703, Alpha 10.0
+Evaluating individual 34
+Evaluated individual 34 on 34
+----Individual 34 Optimization----
+Energy per atom = -3.62660161812
+Individual '34': Fitness 0.14777917933177198, Energy/atom -3.626601618122977, Chi^2 0.37743807974547494, Alpha 10.0
+Evaluating individual 35
+Evaluated individual 35 on 35
+----Individual 35 Optimization----
+Energy per atom = -3.61878478964
+Individual '35': Fitness -0.10451665211386052, Energy/atom -3.618784789644013, Chi^2 0.35142681375301527, Alpha 10.0
+Evaluating individual 36
+Evaluated individual 36 on 36
+----Individual 36 Optimization----
+Energy per atom = -3.62664012945
+Individual '36': Fitness -0.19607596590656362, Energy/atom -3.6266401294498385, Chi^2 0.34305641635432749, Alpha 10.0
+Evaluating individual 37
+Evaluated individual 37 on 37
+----Individual 37 Optimization----
+Energy per atom = -3.61903527508
+Individual '37': Fitness 0.087030305100253447, Energy/atom -3.619035275080906, Chi^2 0.37060655801811593, Alpha 10.0
+Evaluating individual 38
+Evaluated individual 38 on 38
+----Individual 38 Optimization----
+Energy per atom = -3.63090064725
+Individual '38': Fitness -0.18092004872422418, Energy/atom -3.630900647249191, Chi^2 0.34499805985249671, Alpha 10.0
+Evaluating individual 39
+Evaluated individual 39 on 39
+----Individual 39 Optimization----
+Energy per atom = -3.62655501618
+Individual '39': Fitness -0.11803004935766914, Energy/atom -3.6265550161812294, Chi^2 0.35085249668235602, Alpha 10.0
+Evaluating individual 40
+Evaluated individual 40 on 40
+----Individual 40 Optimization----
+Energy per atom = -3.62510032362
+Individual '40': Fitness -0.24454291381702031, Energy/atom -3.6251003236245953, Chi^2 0.33805574098075752, Alpha 10.0
+Evaluating individual 41
+Evaluated individual 41 on 41
+----Individual 41 Optimization----
+Energy per atom = -3.62645889968
+Individual '41': Fitness -0.67750267314261858, Energy/atom -3.6264588996763756, Chi^2 0.29489562265337571, Alpha 10.0
+Evaluating individual 42
+Evaluated individual 42 on 42
+----Individual 42 Optimization----
+Energy per atom = -3.62666699029
+Individual '42': Fitness 0.0098186417370214052, Energy/atom -3.6266669902912625, Chi^2 0.3636485632028284, Alpha 10.0
+Evaluating individual 43
+Evaluated individual 43 on 43
+----Individual 43 Optimization----
+Energy per atom = -3.62564854369
+Individual '43': Fitness 0.19590231021448057, Energy/atom -3.62564854368932, Chi^2 0.38215508539038007, Alpha 10.0
+Evaluating individual 44
+Evaluated individual 44 on 44
+----Individual 44 Optimization----
+Energy per atom = -3.61988705502
+Individual '44': Fitness 0.044323331273838029, Energy/atom -3.6198870550161812, Chi^2 0.36642103862900194, Alpha 10.0
+Evaluating individual 45
+Evaluated individual 45 on 45
+----Individual 45 Optimization----
+Energy per atom = -3.6238776699
+Individual '45': Fitness -0.10215600158140914, Energy/atom -3.6238776699029125, Chi^2 0.35217216683215036, Alpha 10.0
+Evaluating individual 46
+Evaluated individual 46 on 46
+----Individual 46 Optimization----
+Energy per atom = -3.6244618123
+Individual '46': Fitness -0.22767298374586975, Energy/atom -3.624461812297734, Chi^2 0.33967888285518644, Alpha 10.0
+Evaluating individual 47
+Evaluated individual 47 on 47
+----Individual 47 Optimization----
+Energy per atom = -3.61614951456
+Individual '47': Fitness -0.20630527740974314, Energy/atom -3.616149514563107, Chi^2 0.34098442371533638, Alpha 10.0
+Evaluating individual 48
+Evaluated individual 48 on 48
+----Individual 48 Optimization----
+Energy per atom = -3.62835631068
+Individual '48': Fitness -0.56187638580542387, Energy/atom -3.6283563106796115, Chi^2 0.30664799248741875, Alpha 10.0
+Evaluating individual 49
+Evaluated individual 49 on 49
+----Individual 49 Optimization----
+Energy per atom = -3.62790323625
+Individual '49': Fitness 0.17166421193998671, Energy/atom -3.6279032362459542, Chi^2 0.37995674481859409, Alpha 10.0
+Evaluating individual 50
+Evaluated individual 50 on 50
+----Individual 50 Optimization----
+Energy per atom = -3.62121682848
+Individual '50': Fitness -0.05056360892440992, Energy/atom -3.621216828478964, Chi^2 0.35706532195545543, Alpha 10.0
+Evaluating individual 51
+Evaluated individual 51 on 51
+----Individual 51 Optimization----
+Energy per atom = -3.62214466019
+Individual '51': Fitness -0.080653525493874056, Energy/atom -3.622144660194175, Chi^2 0.35414911347003009, Alpha 10.0
+Evaluating individual 52
+Evaluated individual 52 on 52
+----Individual 52 Optimization----
+Energy per atom = -3.62326278317
+Individual '52': Fitness -0.23934765481824494, Energy/atom -3.623262783171521, Chi^2 0.33839151283532759, Alpha 10.0
+Evaluating individual 53
+Evaluated individual 53 on 53
+----Individual 53 Optimization----
+Energy per atom = -3.63032491909
+Individual '53': Fitness -0.12215794690258752, Energy/atom -3.6303249190938516, Chi^2 0.35081669721912639, Alpha 10.0
+Evaluating individual 54
+Evaluated individual 54 on 54
+----Individual 54 Optimization----
+Energy per atom = -3.63209579288
+Individual '54': Fitness -0.23612969043027698, Energy/atom -3.6320957928802593, Chi^2 0.33959661024499821, Alpha 10.0
+Evaluating individual 55
+Evaluated individual 55 on 55
+----Individual 55 Optimization----
+Energy per atom = -3.62294401294
+Individual '55': Fitness 0.13019833765831823, Energy/atom -3.622944012944984, Chi^2 0.37531423506033024, Alpha 10.0
+Evaluating individual 56
+Evaluated individual 56 on 56
+----Individual 56 Optimization----
+Energy per atom = -3.62298964401
+Individual '56': Fitness 0.026399184692779798, Energy/atom -3.6229896440129448, Chi^2 0.36493888287057247, Alpha 10.0
+Evaluating individual 57
+Evaluated individual 57 on 57
+----Individual 57 Optimization----
+Energy per atom = -3.62739773463
+Individual '57': Fitness 0.29716128174264744, Energy/atom -3.6273977346278317, Chi^2 0.39245590163704791, Alpha 10.0
+Evaluating individual 58
+Evaluated individual 58 on 58
+----Individual 58 Optimization----
+Energy per atom = -3.6183381877
+Individual '58': Fitness -0.58377627435059765, Energy/atom -3.618338187702265, Chi^2 0.30345619133516671, Alpha 10.0
+Evaluating individual 59
+Evaluated individual 59 on 59
+----Individual 59 Optimization----
+Energy per atom = -3.6146815534
+Individual '59': Fitness -0.46181880461583669, Energy/atom -3.614681553398058, Chi^2 0.31528627487822214, Alpha 10.0
+
+----Stats----
+  Min -0.67750267314261858
+  Max 0.45122121316282682
+  Avg -0.13790365475255462
+  Medium -0.11803004935766914
+  Std 0.24230609462457481
+  Genrep 0
+
+--New Population--
+Individual 0
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 41
+    Energy = -1120.5758
+    Fitness = -0.677502673143
+Number of positions = 309
+Individual 1
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 2
+    Energy = -1120.7781
+    Fitness = -0.636747082806
+Number of positions = 309
+Individual 2
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 13
+    Energy = -1121.5876
+    Fitness = -0.623791768258
+Number of positions = 309
+Individual 3
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 58
+    Energy = -1118.0665
+    Fitness = -0.583776274351
+Number of positions = 309
+Individual 4
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 48
+    Energy = -1121.1621
+    Fitness = -0.561876385805
+Number of positions = 309
+Individual 5
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 15
+    Energy = -1117.5132
+    Fitness = -0.558254633752
+Number of positions = 309
+Individual 6
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 7
+    Energy = -1119.9077
+    Fitness = -0.543635899914
+Number of positions = 309
+Individual 7
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 59
+    Energy = -1116.9366
+    Fitness = -0.461818804616
+Number of positions = 309
+Individual 8
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 5
+    Energy = -1118.5398
+    Fitness = -0.448854518554
+Number of positions = 309
+Individual 9
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 23
+    Energy = -1118.9195
+    Fitness = -0.398000139388
+Number of positions = 309
+Individual 10
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 1
+    Energy = -1120.729
+    Fitness = -0.394222393871
+Number of positions = 309
+Individual 11
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 22
+    Energy = -1119.4417
+    Fitness = -0.285184832327
+Number of positions = 309
+Individual 12
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 17
+    Energy = -1120.2183
+    Fitness = -0.279312624042
+Number of positions = 309
+Individual 13
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 8
+    Energy = -1119.1244
+    Fitness = -0.247059913063
+Number of positions = 309
+Individual 14
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 40
+    Energy = -1120.156
+    Fitness = -0.244542913817
+Number of positions = 309
+Individual 15
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 52
+    Energy = -1119.5882
+    Fitness = -0.239347654818
+Number of positions = 309
+Individual 16
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 54
+    Energy = -1122.3176
+    Fitness = -0.23612969043
+Number of positions = 309
+Individual 17
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 46
+    Energy = -1119.9587
+    Fitness = -0.227672983746
+Number of positions = 309
+Individual 18
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 21
+    Energy = -1119.2656
+    Fitness = -0.227642415062
+Number of positions = 309
+Individual 19
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 47
+    Energy = -1117.3902
+    Fitness = -0.20630527741
+Number of positions = 309
+Individual 20
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 36
+    Energy = -1120.6318
+    Fitness = -0.196075965907
+Number of positions = 309
+Individual 21
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 19
+    Energy = -1118.6983
+    Fitness = -0.194289515612
+Number of positions = 309
+Individual 22
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 4
+    Energy = -1119.8627
+    Fitness = -0.189460724255
+Number of positions = 309
+Individual 23
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 38
+    Energy = -1121.9483
+    Fitness = -0.180920048724
+Number of positions = 309
+Individual 24
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 20
+    Energy = -1119.0959
+    Fitness = -0.172915175767
+Number of positions = 309
+Individual 25
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 6
+    Energy = -1117.7379
+    Fitness = -0.160155505027
+Number of positions = 309
+Individual 26
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 10
+    Energy = -1120.0178
+    Fitness = -0.154963145881
+Number of positions = 309
+Individual 27
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 29
+    Energy = -1120.0677
+    Fitness = -0.126216352613
+Number of positions = 309
+Individual 28
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 53
+    Energy = -1121.7704
+    Fitness = -0.122157946903
+Number of positions = 309
+Individual 29
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 11
+    Energy = -1118.9806
+    Fitness = -0.120988068223
+Number of positions = 309
+Individual 30
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 39
+    Energy = -1120.6055
+    Fitness = -0.118030049358
+Number of positions = 309
+Individual 31
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 32
+    Energy = -1119.6407
+    Fitness = -0.114719712259
+Number of positions = 309
+Individual 32
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 35
+    Energy = -1118.2045
+    Fitness = -0.104516652114
+Number of positions = 309
+Individual 33
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 45
+    Energy = -1119.7782
+    Fitness = -0.102156001581
+Number of positions = 309
+Individual 34
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 0
+    Energy = -1119.7732
+    Fitness = -0.0954020707666
+Number of positions = 309
+Individual 35
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 14
+    Energy = -1117.3961
+    Fitness = -0.0942740986472
+Number of positions = 309
+Individual 36
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 51
+    Energy = -1119.2427
+    Fitness = -0.0806535254939
+Number of positions = 309
+Individual 37
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 16
+    Energy = -1120.2281
+    Fitness = -0.065679647661
+Number of positions = 309
+Individual 38
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 50
+    Energy = -1118.956
+    Fitness = -0.0505636089244
+Number of positions = 309
+Individual 39
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 18
+    Energy = -1119.1734
+    Fitness = -0.0410132086739
+Number of positions = 309
+Individual 40
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 25
+    Energy = -1119.3707
+    Fitness = -0.0164089516502
+Number of positions = 309
+Individual 41
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 12
+    Energy = -1120.616
+    Fitness = -0.0108560881073
+Number of positions = 309
+Individual 42
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 27
+    Energy = -1121.2817
+    Fitness = -0.00801980742849
+Number of positions = 309
+Individual 43
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 42
+    Energy = -1120.6401
+    Fitness = 0.00981864173702
+Number of positions = 309
+Individual 44
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 30
+    Energy = -1118.052
+    Fitness = 0.0154017429475
+Number of positions = 309
+Individual 45
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 56
+    Energy = -1119.5038
+    Fitness = 0.0263991846928
+Number of positions = 309
+Individual 46
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 9
+    Energy = -1118.7125
+    Fitness = 0.0374399186574
+Number of positions = 309
+Individual 47
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 44
+    Energy = -1118.5451
+    Fitness = 0.0443233312738
+Number of positions = 309
+Individual 48
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 26
+    Energy = -1121.3033
+    Fitness = 0.0493703674178
+Number of positions = 309
+Individual 49
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 37
+    Energy = -1118.2819
+    Fitness = 0.0870303051003
+Number of positions = 309
+Individual 50
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 33
+    Energy = -1118.9863
+    Fitness = 0.120938506948
+Number of positions = 309
+Individual 51
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 55
+    Energy = -1119.4897
+    Fitness = 0.130198337658
+Number of positions = 309
+Individual 52
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 34
+    Energy = -1120.6199
+    Fitness = 0.147779179332
+Number of positions = 309
+Individual 53
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 28
+    Energy = -1118.0191
+    Fitness = 0.159302201107
+Number of positions = 309
+Individual 54
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 49
+    Energy = -1121.0221
+    Fitness = 0.17166421194
+Number of positions = 309
+Individual 55
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 31
+    Energy = -1119.1412
+    Fitness = 0.188644630067
+Number of positions = 309
+Individual 56
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 3
+    Energy = -1119.0913
+    Fitness = 0.195300101596
+Number of positions = 309
+Individual 57
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 43
+    Energy = -1120.3254
+    Fitness = 0.195902310214
+Number of positions = 309
+Individual 58
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 57
+    Energy = -1120.8659
+    Fitness = 0.297161281743
+Number of positions = 309
+Individual 59
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 24
+    Energy = -1117.8454
+    Fitness = 0.451221213163
+Number of positions = 309
+
+-------- Generation 1 --------
+
+--Applying Crossover--
+Simple Two Pt Cx between individual 27 and individual 31
+Simple Two Pt Cx between individual 13 and individual 1
+Simple Two Pt Cx between individual 4 and individual 11
+Simple Two Pt Cx between individual 10 and individual 17
+Simple Two Pt Cx between individual 19 and individual 24
+Simple Two Pt Cx between individual 6 and individual 0
+Simple Two Pt Cx between individual 8 and individual 2
+Simple Two Pt Cx between individual 18 and individual 15
+Simple Two Pt Cx between individual 2 and individual 19
+Simple Two Pt Cx between individual 7 and individual 4
+Simple Two Pt Cx between individual 0 and individual 18
+Simple Two Pt Cx between individual 31 and individual 11
+Simple Two Pt Cx between individual 4 and individual 37
+Simple Two Pt Cx between individual 21 and individual 18
+Simple Two Pt Cx between individual 14 and individual 22
+Simple Two Pt Cx between individual 13 and individual 3
+Simple Two Pt Cx between individual 6 and individual 18
+Simple Two Pt Cx between individual 1 and individual 0
+Simple Two Pt Cx between individual 4 and individual 17
+Simple Two Pt Cx between individual 34 and individual 22
+Simple Two Pt Cx between individual 41 and individual 3
+Simple Two Pt Cx between individual 2 and individual 10
+Simple Two Pt Cx between individual 15 and individual 20
+Simple Two Pt Cx between individual 32 and individual 7
+Simple Two Pt Cx between individual 3 and individual 5
+Simple Two Pt Cx between individual 4 and individual 30
+Simple Two Pt Cx between individual 9 and individual 15
+
+--Applying Mutation--
+Group Lattice Alteration Mutation performed on individual
+Index = 13
+Number of atoms moved = 38
+(19.014742270882053, 18.294949609980442, 13.829585908077476)
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+Group Lattice Alteration Mutation performed on individual
+Index = 17
+Number of atoms moved = 48
+(9.4233030034174803, 17.265444893915788, 7.6707488466679692)
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+Lattice Alteration Mutation performed on individual
+Index = 0
+Number of atoms moved = 2
+[(13.477533597941022, 19.945994353015294, 11.48390052167635), (8.9459157982256841, 16.476061987636143, 18.356242288714725)]
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+Zero point full rotation performed on individual
+Index = 8
+Rotation vector = 'y'
+Rotation angle = 1.1684488268227187
+Group Lattice Alteration Mutation performed on individual
+Index = 15
+Number of atoms moved = 50
+(2.8924391912073704, 6.5031124898259653, 8.8956481634627789)
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+Zero point full rotation performed on individual
+Index = 19
+Rotation vector = '-z'
+Rotation angle = 2.2697134727642845
+Group Lattice Alteration Mutation performed on individual
+Index = 7
+Number of atoms moved = 34
+(3.4842663448281113, 13.897383660248938, 17.974442171369812)
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+Group Lattice Alteration Mutation performed on individual
+Index = 18
+Number of atoms moved = 14
+(10.053708387167962, 16.335365314142674, 2.2324082491847195)
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+STEM Mutation performed on individual
+Index = 3
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+moved atoms=[0, 1, 4, 5, 6, 7, 8, 10, 11, 14, 16, 17, 18, 20, 21, 23, 26, 27, 28, 29, 30, 33, 36, 37, 39, 40, 41, 43, 44, 45, 46, 48, 51, 53, 54, 55, 56, 58, 60, 61, 62, 64, 65, 67, 68, 72, 76, 79, 80, 81, 82, 84, 85, 88, 89, 91, 93, 95, 96, 97, 98, 101, 102, 103, 104, 105, 106, 108, 109, 110, 111, 112, 113, 114, 117, 118, 119, 121, 122, 123, 127, 131, 134, 135, 136, 137, 141, 142, 145, 146, 147, 148, 149, 150, 151, 152, 153, 155, 157, 158, 159, 160, 161, 162, 164, 165, 167, 168, 172, 173, 174, 175, 177, 179, 181, 182, 183, 184, 187, 188, 190, 192, 194, 197, 198, 200, 201, 202, 204, 205, 206, 208, 211, 213, 214, 217, 219, 220, 222, 225, 230, 231, 233, 234, 236, 238, 239, 243, 244, 245, 246, 250, 252, 255, 257, 258, 259, 261, 263, 265, 269, 270, 273, 276, 278, 279, 280, 282, 283, 284, 286, 287, 294, 296, 298, 300, 301, 305]
+Rotation Mutation performed on individual
+Index = 22
+Number of atoms rotated = 76
+Rotation vector = 'z'
+Rotation angle = 1.0856654383578161
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+Zero point full rotation performed on individual
+Index = 3
+Rotation vector = '-y'
+Rotation angle = 0.021747159194443734
+Lattice Alteration Mutation performed on individual
+Index = 10
+Number of atoms moved = 3
+[(17.224311841423344, 13.750343709002065, 2.8163441479293665), (7.4664934953926778, 13.039910942888131, 13.990785942300084), (4.5678375242841316, 8.1959053136069393, 4.9916845773132499)]
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+Lattice Alteration Mutation performed on individual
+Index = 4
+Number of atoms moved = 3
+[(21.960453153007379, 11.172475730662923, 16.670585219901831), (18.21494548956554, 11.395777079490459, 22.359796718076609), (9.6328904925876717, 14.803923222331919, 18.213595545582933)]
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+Zero point full rotation performed on individual
+Index = 9
+Rotation vector = '-z'
+Rotation angle = 3.0903512969341063
+
+--Evaluate Structures--
+Evaluating individual 27
+Evaluated individual 27 on 0
+----Individual (27+31) Optimization----
+Energy per atom = -3.6242828479
+Individual '(27+31)': Fitness -0.23950881401352131, Energy/atom -3.6242828478964397, Chi^2 0.33847740338829185, Alpha 10.0
+Evaluating individual 31
+Evaluated individual 31 on 1
+----Individual (31+27) Optimization----
+Energy per atom = -3.62542297735
+Individual '(31+27)': Fitness -0.74481217962046475, Energy/atom -3.625422977346278, Chi^2 0.28806107977258133, Alpha 10.0
+Evaluating individual 13
+Evaluated individual 13 on 2
+----Individual (13+1)mLAGC38 Optimization----
+Energy per atom = -3.49859514563
+Individual '(13+1)mLAGC38': Fitness 1.062983074028498, Energy/atom -3.498595145631068, Chi^2 0.45615782196595661, Alpha 10.0
+Evaluating individual 1
+Evaluated individual 1 on 3
+----Individual (1+13) Optimization----
+Energy per atom = -3.62283268608
+Individual '(1+13)': Fitness -0.64662743725887006, Energy/atom -3.6228326860841427, Chi^2 0.29762052488252727, Alpha 10.0
+Evaluating individual 4
+Evaluated individual 4 on 4
+----Individual (4+11) Optimization----
+Energy per atom = -3.62388964401
+Individual '(4+11)': Fitness -0.17886014778501513, Energy/atom -3.623889644012945, Chi^2 0.34450294962279299, Alpha 10.0
+Evaluating individual 11
+Evaluated individual 11 on 5
+----Individual (11+4) Optimization----
+Energy per atom = -3.61903883495
+Individual '(11+4)': Fitness -0.78629544871031687, Energy/atom -3.619038834951456, Chi^2 0.28327433862411394, Alpha 10.0
+Evaluating individual 10
+Evaluated individual 10 on 6
+----Individual (10+17) Optimization----
+Energy per atom = -3.62535048544
+Individual '(10+17)': Fitness -0.32781895759598267, Energy/atom -3.6253504854368934, Chi^2 0.32975315278409106, Alpha 10.0
+Evaluating individual 17
+Evaluated individual 17 on 7
+----Individual (17+10)mLAGC48 Optimization----
+Energy per atom = -3.52565825243
+Individual '(17+10)mLAGC48': Fitness 1.4446188278083931, Energy/atom -3.5256582524271844, Chi^2 0.49702770802355778, Alpha 10.0
+Evaluating individual 19
+Evaluated individual 19 on 8
+----Individual (19+24) Optimization----
+Energy per atom = -3.62876731392
+Individual '(19+24)': Fitness -0.39648880350624616, Energy/atom -3.6287673139158576, Chi^2 0.32322785104096113, Alpha 10.0
+Evaluating individual 24
+Evaluated individual 24 on 9
+----Individual (24+19) Optimization----
+Energy per atom = -3.62503365696
+Individual '(24+19)': Fitness 0.034687470896833439, Energy/atom -3.6250336569579282, Chi^2 0.36597211278547614, Alpha 10.0
+Evaluating individual 6
+Evaluated individual 6 on 10
+----Individual (6+0) Optimization----
+Energy per atom = -3.62250679612
+Individual '(6+0)': Fitness -0.095927204845676961, Energy/atom -3.6225067961165047, Chi^2 0.35265795912708275, Alpha 10.0
+Evaluating individual 0
+Evaluated individual 0 on 11
+----Individual (0+6)mLA2 Optimization----
+Energy per atom = -3.62897928803
+Individual '(0+6)mLA2': Fitness -0.065835923296972965, Energy/atom -3.6289792880258895, Chi^2 0.35631433647289168, Alpha 10.0
+Evaluating individual 8
+Evaluated individual 8 on 12
+----Individual (8+2)mZPR Optimization----
+Energy per atom = -3.62680711974
+Individual '(8+2)mZPR': Fitness -0.17403095183864092, Energy/atom -3.6268071197411, Chi^2 0.34527761679024593, Alpha 10.0
+Evaluating individual 2
+Evaluated individual 2 on 13
+----Individual (2+8) Optimization----
+Energy per atom = -3.62565242718
+Individual '(2+8)': Fitness -0.53475091441501021, Energy/atom -3.625652427184466, Chi^2 0.30909015127694561, Alpha 10.0
+Evaluating individual 18
+Evaluated individual 18 on 14
+----Individual (18+15) Optimization----
+Energy per atom = -3.62973171521
+Individual '(18+15)': Fitness -0.362822793515722, Energy/atom -3.629731715210356, Chi^2 0.3266908921694634, Alpha 10.0
+Evaluating individual 15
+Evaluated individual 15 on 15
+----Individual (15+18)mLAGC50 Optimization----
+Energy per atom = -3.62536504854
+Individual '(15+18)mLAGC50': Fitness -0.057191370090549754, Energy/atom -3.6253650485436895, Chi^2 0.35681736784531398, Alpha 10.0
+Evaluating individual 2
+Evaluated individual 2 on 16
+----Individual (2+19) Optimization----
+Energy per atom = -3.62611521036
+Individual '(2+19)': Fitness -0.24628936609148333, Energy/atom -3.626115210355987, Chi^2 0.33798258442645035, Alpha 10.0
+Evaluating individual 19
+Evaluated individual 19 on 17
+----Individual (19+2)mZPR Optimization----
+Energy per atom = -3.62541553398
+Individual '(19+2)mZPR': Fitness -0.31997900627520615, Energy/atom -3.6254155339805827, Chi^2 0.33054365277053765, Alpha 10.0
+Evaluating individual 7
+Evaluated individual 7 on 18
+----Individual (7+4)mLAGC34 Optimization----
+Energy per atom = -3.60155760518
+Individual '(7+4)mLAGC34': Fitness -0.34183341789607757, Energy/atom -3.6015576051779936, Chi^2 0.3259724187281916, Alpha 10.0
+Evaluating individual 4
+Evaluated individual 4 on 19
+----Individual (4+7) Optimization----
+Energy per atom = -3.62320517799
+Individual '(4+7)': Fitness 0.096730439329789419, Energy/atom -3.623205177993528, Chi^2 0.37199356173233172, Alpha 10.0
+Evaluating individual 0
+Evaluated individual 0 on 20
+----Individual (0+18) Optimization----
+Energy per atom = -3.62779352751
+Individual '(0+18)': Fitness -0.26423272555380484, Energy/atom -3.6277935275080906, Chi^2 0.33635608019542856, Alpha 10.0
+Evaluating individual 18
+Evaluated individual 18 on 21
+----Individual (18+0) Optimization----
+Energy per atom = -3.62644983819
+Individual '(18+0)': Fitness -0.047304643909161559, Energy/atom -3.6264498381877024, Chi^2 0.35791451942785407, Alpha 10.0
+Evaluating individual 31
+Evaluated individual 31 on 22
+----Individual (31+11) Optimization----
+Energy per atom = -3.61870970874
+Individual '(31+11)': Fitness -0.064344127096692461, Energy/atom -3.618709708737864, Chi^2 0.35543655816411712, Alpha 10.0
+Evaluating individual 11
+Evaluated individual 11 on 23
+----Individual (11+31) Optimization----
+Energy per atom = -3.62087475728
+Individual '(11+31)': Fitness -0.22238353311884174, Energy/atom -3.6208747572815536, Chi^2 0.33984912241627119, Alpha 10.0
+Evaluating individual 4
+Evaluated individual 4 on 24
+----Individual (4+37) Optimization----
+Energy per atom = -3.62125987055
+Individual '(4+37)': Fitness -0.037800876937006844, Energy/atom -3.6212598705501615, Chi^2 0.35834589936131545, Alpha 10.0
+Evaluating individual 37
+Evaluated individual 37 on 25
+----Individual (37+4) Optimization----
+Energy per atom = -3.62789255663
+Individual '(37+4)': Fitness -0.098076555598034076, Energy/atom -3.6278925566343045, Chi^2 0.35298160010362706, Alpha 10.0
+Evaluating individual 21
+Evaluated individual 21 on 26
+----Individual (21+18) Optimization----
+Energy per atom = -3.62365048544
+Individual '(21+18)': Fitness 0.028735818554666004, Energy/atom -3.6236504854368934, Chi^2 0.36523863039915594, Alpha 10.0
+Evaluating individual 18
+Evaluated individual 18 on 27
+----Individual (18+21)mLAGC14 Optimization----
+Energy per atom = -3.55694498382
+Individual '(18+21)mLAGC14': Fitness -0.28198975154832828, Energy/atom -3.55694498381877, Chi^2 0.32749552322704417, Alpha 10.0
+Evaluating individual 14
+Evaluated individual 14 on 28
+----Individual (14+22) Optimization----
+Energy per atom = -3.62242265372
+Individual '(14+22)': Fitness 0.060449434155908754, Energy/atom -3.622422653721683, Chi^2 0.36828720878775917, Alpha 10.0
+Evaluating individual 22
+Evaluated individual 22 on 29
+----Individual (22+14) Optimization----
+Energy per atom = -3.62590064725
+Individual '(22+14)': Fitness 0.071691000944286376, Energy/atom -3.625900647249191, Chi^2 0.36975916481934773, Alpha 10.0
+Evaluating individual 13
+Evaluated individual 13 on 30
+----Individual (13+3) Optimization----
+Energy per atom = -3.62928770227
+Individual '(13+3)': Fitness -0.09209201846678372, Energy/atom -3.6292877022653722, Chi^2 0.35371956837985885, Alpha 10.0
+Evaluating individual 3
+Evaluated individual 3 on 31
+----Individual (3+13)mSTEM178 Optimization----
+Energy per atom = -3.62752783172
+Individual '(3+13)mSTEM178': Fitness -0.056406541092243412, Energy/atom -3.62752783171521, Chi^2 0.35711212906229667, Alpha 10.0
+Evaluating individual 6
+Evaluated individual 6 on 32
+----Individual (6+18) Optimization----
+Energy per atom = -3.62619158576
+Individual '(6+18)': Fitness -0.73490712228905641, Energy/atom -3.6261915857605174, Chi^2 0.28912844634714607, Alpha 10.0
+Evaluating individual 18
+Evaluated individual 18 on 33
+----Individual (18+6) Optimization----
+Energy per atom = -3.62097119741
+Individual '(18+6)': Fitness -0.38365013165573547, Energy/atom -3.6209711974110035, Chi^2 0.32373210657552681, Alpha 10.0
+Evaluating individual 1
+Evaluated individual 1 on 34
+----Individual (1+0) Optimization----
+Energy per atom = -3.62925728155
+Individual '(1+0)': Fitness -0.11460248829880548, Energy/atom -3.629257281553398, Chi^2 0.35146547932545924, Alpha 10.0
+Evaluating individual 0
+Evaluated individual 0 on 35
+----Individual (0+1) Optimization----
+Energy per atom = -3.62346957929
+Individual '(0+1)': Fitness -0.23819470532002107, Energy/atom -3.623469579288026, Chi^2 0.3385274873968005, Alpha 10.0
+Evaluating individual 4
+Evaluated individual 4 on 36
+----Individual (4+17) Optimization----
+Energy per atom = -3.62509902913
+Individual '(4+17)': Fitness 0.0016837020963365035, Energy/atom -3.625099029126214, Chi^2 0.36267827312225503, Alpha 10.0
+Evaluating individual 17
+Evaluated individual 17 on 37
+----Individual (17+4) Optimization----
+Energy per atom = -3.62348349515
+Individual '(17+4)': Fitness -0.093706081050692891, Energy/atom -3.6234834951456314, Chi^2 0.35297774140949384, Alpha 10.0
+Evaluating individual 34
+Evaluated individual 34 on 38
+----Individual (34+22) Optimization----
+Energy per atom = -3.62429352751
+Individual '(34+22)': Fitness -0.040562043702993211, Energy/atom -3.6242935275080908, Chi^2 0.35837314838050977, Alpha 10.0
+Evaluating individual 22
+Evaluated individual 22 on 39
+----Individual (22+34)mR76 Optimization----
+Energy per atom = -3.62621682848
+Individual '(22+34)mR76': Fitness -0.092370001259345802, Energy/atom -3.6262168284789644, Chi^2 0.35338468272196188, Alpha 10.0
+Evaluating individual 41
+Evaluated individual 41 on 40
+----Individual (41+3) Optimization----
+Energy per atom = -3.63009902913
+Individual '(41+3)': Fitness -0.29850928395903287, Energy/atom -3.6300990291262134, Chi^2 0.33315897451671805, Alpha 10.0
+Evaluating individual 3
+Evaluated individual 3 on 41
+----Individual (3+41)mZPR Optimization----
+Energy per atom = -3.62674822006
+Individual '(3+41)mZPR': Fitness -0.32063357783311952, Energy/atom -3.6267482200647247, Chi^2 0.33061146422316051, Alpha 10.0
+Evaluating individual 2
+Evaluated individual 2 on 42
+----Individual (2+10) Optimization----
+Energy per atom = -3.62759352751
+Individual '(2+10)': Fitness 0.018445167159752973, Energy/atom -3.6275935275080906, Chi^2 0.36460386946678436, Alpha 10.0
+Evaluating individual 10
+Evaluated individual 10 on 43
+----Individual (10+2)mLA3 Optimization----
+Energy per atom = -3.62553980583
+Individual '(10+2)mLA3': Fitness -0.19853154698964515, Energy/atom -3.625539805825243, Chi^2 0.34270082588355977, Alpha 10.0
+Evaluating individual 15
+Evaluated individual 15 on 44
+----Individual (15+20) Optimization----
+Energy per atom = -3.62565275081
+Individual '(15+20)': Fitness -0.62612147985398803, Energy/atom -3.6256527508090617, Chi^2 0.29995312709550737, Alpha 10.0
+Evaluating individual 20
+Evaluated individual 20 on 45
+----Individual (20+15) Optimization----
+Energy per atom = -3.62105307443
+Individual '(20+15)': Fitness 0.094451575962618328, Energy/atom -3.6210530744336573, Chi^2 0.37155046503962758, Alpha 10.0
+Evaluating individual 32
+Evaluated individual 32 on 46
+----Individual (32+7) Optimization----
+Energy per atom = -3.62424789644
+Individual '(32+7)': Fitness -0.16452262859608879, Energy/atom -3.6242478964401292, Chi^2 0.34597252678440404, Alpha 10.0
+Evaluating individual 7
+Evaluated individual 7 on 47
+----Individual (7+32) Optimization----
+Energy per atom = -3.61970097087
+Individual '(7+32)': Fitness -0.11649002687836019, Energy/atom -3.619700970873786, Chi^2 0.35032109439954262, Alpha 10.0
+Evaluating individual 3
+Evaluated individual 3 on 48
+----Individual (3+5) Optimization----
+Energy per atom = -3.62258899676
+Individual '(3+5)': Fitness -0.29378149323882052, Energy/atom -3.6225889967637546, Chi^2 0.33288075035249343, Alpha 10.0
+Evaluating individual 5
+Evaluated individual 5 on 49
+----Individual (5+3) Optimization----
+Energy per atom = -3.62075566343
+Individual '(5+3)': Fitness -0.4068178596035823, Energy/atom -3.6207556634304208, Chi^2 0.32139378038268385, Alpha 10.0
+Evaluating individual 4
+Evaluated individual 4 on 50
+----Individual (4+30)mLA3 Optimization----
+Energy per atom = -3.61820906149
+Individual '(4+30)mLA3': Fitness 0.09118567588611004, Energy/atom -3.618209061488673, Chi^2 0.37093947373747832, Alpha 10.0
+Evaluating individual 30
+Evaluated individual 30 on 51
+----Individual (30+4) Optimization----
+Energy per atom = -3.62144271845
+Individual '(30+4)': Fitness -0.015807249520999545, Energy/atom -3.6214427184466014, Chi^2 0.3605635468925602, Alpha 10.0
+Evaluating individual 9
+Evaluated individual 9 on 52
+----Individual (9+15)mZPR Optimization----
+Energy per atom = -3.62411294498
+Individual '(9+15)mZPR': Fitness -0.24236284517807949, Energy/atom -3.6241129449838185, Chi^2 0.33817500998057393, Alpha 10.0
+Evaluating individual 15
+Evaluated individual 15 on 53
+----Individual (15+9) Optimization----
+Energy per atom = -3.62027443366
+Individual '(15+9)': Fitness -0.17352276175901693, Energy/atom -3.620274433656958, Chi^2 0.34467516718979413, Alpha 10.0
+Evaluated none individual on 54
+Evaluated none individual on 55
+Evaluated none individual on 56
+Evaluated none individual on 57
+Evaluated none individual on 58
+Evaluated none individual on 59
+
+----Stats----
+  Min -0.78629544871031687
+  Max -0.11649002687836019
+  Avg -0.3347436848223192
+  Medium -0.26423272555380484
+  Std 0.18102820725494867
+  Genrep 0
+
+--New Population--
+Individual 0
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = (11+4)
+    Energy = -1118.283
+    Fitness = -0.78629544871
+Individual 1
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = (31+27)
+    Energy = -1120.2557
+    Fitness = -0.74481217962
+Individual 2
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = (6+18)
+    Energy = -1120.4932
+    Fitness = -0.734907122289
+Individual 3
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 0
+    Energy = -1120.5758
+    Fitness = -0.677502673143
+Individual 4
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = (1+13)
+    Energy = -1119.4553
+    Fitness = -0.646627437259
+Individual 5
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 1
+    Energy = -1120.7781
+    Fitness = -0.636747082806
+Individual 6
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = (15+20)
+    Energy = -1120.3267
+    Fitness = -0.626121479854
+Individual 7
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 2
+    Energy = -1121.5876
+    Fitness = -0.623791768258
+Individual 8
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 3
+    Energy = -1118.0665
+    Fitness = -0.583776274351
+Individual 9
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 4
+    Energy = -1121.1621
+    Fitness = -0.561876385805
+Individual 10
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 5
+    Energy = -1117.5132
+    Fitness = -0.558254633752
+Individual 11
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 6
+    Energy = -1119.9077
+    Fitness = -0.543635899914
+Individual 12
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = (2+8)
+    Energy = -1120.3266
+    Fitness = -0.534750914415
+Individual 13
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 7
+    Energy = -1116.9366
+    Fitness = -0.461818804616
+Individual 14
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 8
+    Energy = -1118.5398
+    Fitness = -0.448854518554
+Individual 15
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = (5+3)
+    Energy = -1118.8135
+    Fitness = -0.406817859604
+Individual 16
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 9
+    Energy = -1118.9195
+    Fitness = -0.398000139388
+Individual 17
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = (19+24)
+    Energy = -1121.2891
+    Fitness = -0.396488803506
+Individual 18
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 10
+    Energy = -1120.729
+    Fitness = -0.394222393871
+Individual 19
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = (18+6)
+    Energy = -1118.8801
+    Fitness = -0.383650131656
+Individual 20
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = (18+15)
+    Energy = -1121.5871
+    Fitness = -0.362822793516
+Individual 21
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = (7+4)mLAGC34
+    Energy = -1112.8813
+    Fitness = -0.341833417896
+Individual 22
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = (10+17)
+    Energy = -1120.2333
+    Fitness = -0.327818957596
+Individual 23
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = (3+41)mZPR
+    Energy = -1120.6652
+    Fitness = -0.320633577833
+Individual 24
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = (19+2)mZPR
+    Energy = -1120.2534
+    Fitness = -0.319979006275
+Individual 25
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = (41+3)
+    Energy = -1121.7006
+    Fitness = -0.298509283959
+Individual 26
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = (3+5)
+    Energy = -1119.38
+    Fitness = -0.293781493239
+Individual 27
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 11
+    Energy = -1119.4417
+    Fitness = -0.285184832327
+Individual 28
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = (18+21)mLAGC14
+    Energy = -1099.096
+    Fitness = -0.281989751548
+Individual 29
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 12
+    Energy = -1120.2183
+    Fitness = -0.279312624042
+Individual 30
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = (0+18)
+    Energy = -1120.9882
+    Fitness = -0.264232725554
+Individual 31
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 13
+    Energy = -1119.1244
+    Fitness = -0.247059913063
+Individual 32
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = (2+19)
+    Energy = -1120.4696
+    Fitness = -0.246289366091
+Individual 33
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 14
+    Energy = -1120.156
+    Fitness = -0.244542913817
+Individual 34
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = (9+15)mZPR
+    Energy = -1119.8509
+    Fitness = -0.242362845178
+Individual 35
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = (27+31)
+    Energy = -1119.9034
+    Fitness = -0.239508814014
+Individual 36
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 15
+    Energy = -1119.5882
+    Fitness = -0.239347654818
+Individual 37
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = (0+1)
+    Energy = -1119.6521
+    Fitness = -0.23819470532
+Individual 38
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 16
+    Energy = -1122.3176
+    Fitness = -0.23612969043
+Individual 39
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 17
+    Energy = -1119.9587
+    Fitness = -0.227672983746
+Individual 40
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 18
+    Energy = -1119.2656
+    Fitness = -0.227642415062
+Individual 41
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = (11+31)
+    Energy = -1118.8503
+    Fitness = -0.222383533119
+Individual 42
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 19
+    Energy = -1117.3902
+    Fitness = -0.20630527741
+Individual 43
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = (10+2)mLA3
+    Energy = -1120.2918
+    Fitness = -0.19853154699
+Individual 44
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 20
+    Energy = -1120.6318
+    Fitness = -0.196075965907
+Individual 45
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 21
+    Energy = -1118.6983
+    Fitness = -0.194289515612
+Individual 46
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 22
+    Energy = -1119.8627
+    Fitness = -0.189460724255
+Individual 47
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 23
+    Energy = -1121.9483
+    Fitness = -0.180920048724
+Individual 48
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = (4+11)
+    Energy = -1119.7819
+    Fitness = -0.178860147785
+Individual 49
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = (8+2)mZPR
+    Energy = -1120.6834
+    Fitness = -0.174030951839
+Individual 50
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = (15+9)
+    Energy = -1118.6648
+    Fitness = -0.173522761759
+Individual 51
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 24
+    Energy = -1119.0959
+    Fitness = -0.172915175767
+Individual 52
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = (32+7)
+    Energy = -1119.8926
+    Fitness = -0.164522628596
+Individual 53
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 25
+    Energy = -1117.7379
+    Fitness = -0.160155505027
+Individual 54
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 26
+    Energy = -1120.0178
+    Fitness = -0.154963145881
+Individual 55
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 27
+    Energy = -1120.0677
+    Fitness = -0.126216352613
+Individual 56
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 28
+    Energy = -1121.7704
+    Fitness = -0.122157946903
+Individual 57
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 29
+    Energy = -1118.9806
+    Fitness = -0.120988068223
+Individual 58
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 30
+    Energy = -1120.6055
+    Fitness = -0.118030049358
+Individual 59
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = (7+32)
+    Energy = -1118.4876
+    Fitness = -0.116490026878
+
+----- Generation Stats -----
+Attempted Crossovers: 54
+Successful Crossovers: 29
+Mutations:
+    Attempted lattice_alteration : 3
+    Successful lattice_alteration : 1
+    Attempted lattice_alteration_group : 5
+    Successful lattice_alteration_group : 2
+    Attempted rotation : 1
+    Successful rotation : 0
+    Attempted stem_mutation : 1
+    Successful stem_mutation : 0
+    Attempted zp_rotation : 4
+    Successful zp_rotation : 4
+
+-------- Generation 2 --------
+
+--Applying Crossover--
+Simple Two Pt Cx between individual 20 and individual 24
+Simple Two Pt Cx between individual 8 and individual 11
+Simple Two Pt Cx between individual 33 and individual 15
+Simple Two Pt Cx between individual 34 and individual 25
+Simple Two Pt Cx between individual 9 and individual 38
+Simple Two Pt Cx between individual 13 and individual 50
+Simple Two Pt Cx between individual 27 and individual 0
+Simple Two Pt Cx between individual 28 and individual 0
+Simple Two Pt Cx between individual 38 and individual 22
+Simple Two Pt Cx between individual 2 and individual 16
+Simple Two Pt Cx between individual 2 and individual 27
+Simple Two Pt Cx between individual 5 and individual 14
+Simple Two Pt Cx between individual 8 and individual 38
+Simple Two Pt Cx between individual 34 and individual 20
+Simple Two Pt Cx between individual 21 and individual 18
+Simple Two Pt Cx between individual 32 and individual 15
+Simple Two Pt Cx between individual 16 and individual 3
+Simple Two Pt Cx between individual 39 and individual 12
+Simple Two Pt Cx between individual 28 and individual 8
+Simple Two Pt Cx between individual 24 and individual 8
+Simple Two Pt Cx between individual 4 and individual 28
+
+--Applying Mutation--
+STEM Mutation performed on individual
+Index = 17
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+moved atoms=[2, 3, 4, 5, 6, 7, 8, 9, 14, 15, 17, 21, 22, 23, 26, 27, 31, 32, 33, 34, 35, 37, 38, 40, 41, 42, 45, 46, 48, 51, 52, 54, 55, 57, 59, 60, 63, 69, 70, 71, 72, 73, 74, 75, 76, 82, 83, 84, 85, 88, 89, 90, 92, 93, 94, 95, 97, 101, 104, 105, 107, 110, 111, 113, 115, 116, 117, 118, 119, 120, 121, 122, 123, 125, 126, 128, 131, 132, 133, 135, 136, 137, 138, 139, 142, 146, 147, 148, 149, 150, 153, 154, 155, 157, 158, 159, 160, 162, 163, 164, 165, 166, 167, 169, 170, 171, 173, 176, 177, 179, 183, 184, 187, 189, 190, 192, 196, 197, 198, 199, 200, 201, 202, 208, 209, 210, 211, 212, 213, 214, 216, 220, 221, 223, 224, 225, 226, 232, 233, 234, 236, 237, 238, 239, 241, 244, 245, 246, 248, 249, 250, 252, 256, 259, 260, 261, 262, 264, 266, 268, 269, 270, 272, 273, 274, 277, 281, 283, 285, 286, 289, 290, 291, 293, 296, 297, 298, 300, 301, 303, 306, 307]
+Group Lattice Alteration Mutation performed on individual
+Index = 16
+Number of atoms moved = 49
+(9.4970759463248839, 1.1692298696066068, 9.9172688630259049)
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+Rotation Mutation performed on individual
+Index = 27
+Number of atoms rotated = 60
+Rotation vector = 'y'
+Rotation angle = 1.6935660637882242
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+Zero point full rotation performed on individual
+Index = 5
+Rotation vector = '-z'
+Rotation angle = 2.063443655722023
+Rotation Mutation performed on individual
+Index = 34
+Number of atoms rotated = 8
+Rotation vector = '-y'
+Rotation angle = 2.579990201736207
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+Rotation Mutation performed on individual
+Index = 21
+Number of atoms rotated = 89
+Rotation vector = 'y'
+Rotation angle = 1.044817504806899
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+Rotation Mutation performed on individual
+Index = 18
+Number of atoms rotated = 64
+Rotation vector = '-z'
+Rotation angle = 2.212573810619451
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+STEM Mutation performed on individual
+Index = 28
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+moved atoms=[2, 3, 4, 5, 8, 9, 10, 13, 14, 16, 17, 19, 20, 22, 23, 24, 25, 27, 30, 33, 35, 37, 38, 39, 40, 42, 43, 44, 47, 49, 52, 53, 58, 59, 60, 63, 64, 66, 67, 70, 71, 73, 75, 78, 79, 80, 81, 84, 86, 88, 90, 91, 94, 98, 99, 100, 103, 104, 106, 108, 109, 110, 111, 114, 116, 118, 124, 126, 128, 130, 132, 134, 135, 138, 140, 142, 144, 145, 148, 150, 151, 156, 157, 158, 159, 163, 164, 165, 170, 171, 172, 174, 175, 176, 178, 179, 180, 181, 182, 184, 187, 188, 189, 194, 197, 201, 203, 205, 206, 207, 209, 210, 211, 213, 215, 217, 218, 220, 221, 222, 225, 227, 228, 229, 230, 231, 232, 235, 236, 237, 238, 240, 242, 246, 249, 250, 253, 255, 257, 258, 259, 262, 263, 264, 267, 270, 271, 274, 276, 277, 280, 281, 283, 284, 285, 289, 292, 296, 299, 300, 301, 306]
+
+--Evaluate Structures--
+Evaluating individual 20
+Evaluated individual 20 on 0
+----Individual (20+24) Optimization----
+Energy per atom = -3.62678317152
+Individual '(20+24)': Fitness -0.010737142968361368, Energy/atom -3.6267831715210352, Chi^2 0.36160460285526741, Alpha 10.0
+Evaluating individual 24
+Evaluated individual 24 on 1
+----Individual (24+20) Optimization----
+Energy per atom = -3.62964822006
+Individual '(24+20)': Fitness 0.061537833844843348, Energy/atom -3.629648220064725, Chi^2 0.36911860539095687, Alpha 10.0
+Evaluating individual 8
+Evaluated individual 8 on 2
+----Individual (8+11) Optimization----
+Energy per atom = -3.6194592233
+Individual '(8+11)': Fitness 0.0880144244383394, Energy/atom -3.619459223300971, Chi^2 0.37074736477393105, Alpha 10.0
+Evaluating individual 11
+Evaluated individual 11 on 3
+----Individual (11+8) Optimization----
+Energy per atom = -3.62130355987
+Individual '(11+8)': Fitness -0.12155189450414428, Energy/atom -3.62130355987055, Chi^2 0.34997516653664057, Alpha 10.0
+Evaluating individual 17
+Evaluated individual 17 on 4
+----Individual 17mSTEM182 Optimization----
+Energy per atom = -3.61690355987
+Individual '17mSTEM182': Fitness -0.6760739655169612, Energy/atom -3.61690355987055, Chi^2 0.29408295943535889, Alpha 10.0
+Evaluating individual 33
+Evaluated individual 33 on 5
+----Individual (33+15) Optimization----
+Energy per atom = -3.62236957929
+Individual '(33+15)': Fitness -0.11097327336924234, Energy/atom -3.622369579288026, Chi^2 0.35113963059187836, Alpha 10.0
+Evaluating individual 15
+Evaluated individual 15 on 6
+----Individual (15+33) Optimization----
+Energy per atom = -3.62633042071
+Individual '(15+33)': Fitness -0.26210011705114367, Energy/atom -3.6263304207119744, Chi^2 0.33642303036608306, Alpha 10.0
+Evaluating individual 34
+Evaluated individual 34 on 7
+----Individual (34+25) Optimization----
+Energy per atom = -3.63284789644
+Individual '(34+25)': Fitness -0.22962221744450195, Energy/atom -3.632847896440129, Chi^2 0.34032256789956272, Alpha 10.0
+Evaluating individual 25
+Evaluated individual 25 on 8
+----Individual (25+34) Optimization----
+Energy per atom = -3.6265420712
+Individual '(25+34)': Fitness -0.1681909664177037, Energy/atom -3.626542071197411, Chi^2 0.34583511047797072, Alpha 10.0
+Evaluating individual 9
+Evaluated individual 9 on 9
+----Individual (9+38) Optimization----
+Energy per atom = -3.62403236246
+Individual '(9+38)': Fitness -0.15236983132483939, Energy/atom -3.624032362459547, Chi^2 0.34716625311347077, Alpha 10.0
+Evaluating individual 38
+Evaluated individual 38 on 10
+----Individual (38+9) Optimization----
+Energy per atom = -3.62754951456
+Individual '(38+9)': Fitness -0.0041930231751532432, Energy/atom -3.627549514563107, Chi^2 0.36233564913879535, Alpha 10.0
+Evaluating individual 13
+Evaluated individual 13 on 11
+----Individual (13+50) Optimization----
+Energy per atom = -3.62161941748
+Individual '(13+50)': Fitness 0.054784250301414428, Energy/atom -3.621619417475728, Chi^2 0.36764036677771428, Alpha 10.0
+Evaluating individual 50
+Evaluated individual 50 on 12
+----Individual (50+13) Optimization----
+Energy per atom = -3.62800032362
+Individual '(50+13)': Fitness -0.43588092352133678, Energy/atom -3.6280003236245957, Chi^2 0.31921194001032588, Alpha 10.0
+Evaluating individual 27
+Evaluated individual 27 on 13
+----Individual (27+0) Optimization----
+Energy per atom = -3.62275954693
+Individual '(27+0)': Fitness -0.4489423351568651, Energy/atom -3.6227595469255665, Chi^2 0.31738172117687014, Alpha 10.0
+Evaluating individual 0
+Evaluated individual 0 on 14
+----Individual (0+27) Optimization----
+Energy per atom = -3.62209935275
+Individual '(0+27)': Fitness -0.38891179381892815, Energy/atom -3.6220993527508085, Chi^2 0.32331875589318804, Alpha 10.0
+Evaluating individual 28
+Evaluated individual 28 on 15
+----Individual (28+0) Optimization----
+Energy per atom = -3.61025728155
+Individual '(28+0)': Fitness -0.37432802650978747, Energy/atom -3.610257281553398, Chi^2 0.32359292550436108, Alpha 10.0
+Evaluating individual 0
+Evaluated individual 0 on 16
+----Individual (0+28) Optimization----
+Energy per atom = -3.62337281553
+Individual '(0+28)': Fitness -0.49262032346309814, Energy/atom -3.6233728155339806, Chi^2 0.31307524920708824, Alpha 10.0
+Evaluating individual 38
+Evaluated individual 38 on 17
+----Individual (38+22) Optimization----
+Energy per atom = -3.62873106796
+Individual '(38+22)': Fitness -0.050079004556863982, Energy/atom -3.6287310679611653, Chi^2 0.35786520634043012, Alpha 10.0
+Evaluating individual 22
+Evaluated individual 22 on 18
+----Individual (22+38) Optimization----
+Energy per atom = -3.62733365696
+Individual '(22+38)': Fitness -0.52665796726356096, Energy/atom -3.6273336569579286, Chi^2 0.31006756896943677, Alpha 10.0
+Evaluating individual 2
+Evaluated individual 2 on 19
+----Individual (2+16) Optimization----
+Energy per atom = -3.62430906149
+Individual '(2+16)': Fitness -0.20321876503136238, Energy/atom -3.624309061488673, Chi^2 0.34210902964573109, Alpha 10.0
+Evaluating individual 16
+Evaluated individual 16 on 20
+----Individual (16+2)mLAGC49 Optimization----
+Energy per atom = -3.56453139159
+Individual '(16+2)mLAGC49': Fitness 0.28192835155111595, Energy/atom -3.5645313915857604, Chi^2 0.38464597431368763, Alpha 10.0
+Evaluating individual 2
+Evaluated individual 2 on 21
+----Individual (2+27) Optimization----
+Energy per atom = -3.61962330097
+Individual '(2+27)': Fitness -0.56697712357972696, Energy/atom -3.619623300970874, Chi^2 0.30526461773911467, Alpha 10.0
+Evaluating individual 27
+Evaluated individual 27 on 22
+----Individual (27+2)mR60 Optimization----
+Energy per atom = -3.62435857605
+Individual '(27+2)mR60': Fitness -0.11891041256761303, Energy/atom -3.6243585760517796, Chi^2 0.35054481634841667, Alpha 10.0
+Evaluating individual 5
+Evaluated individual 5 on 23
+----Individual (5+14)mZPR Optimization----
+Energy per atom = -3.62626375405
+Individual '(5+14)mZPR': Fitness -0.35619355992330126, Energy/atom -3.6262637540453073, Chi^2 0.32700701941220062, Alpha 10.0
+Evaluating individual 14
+Evaluated individual 14 on 24
+----Individual (14+5) Optimization----
+Energy per atom = -3.62748996764
+Individual '(14+5)': Fitness -0.38419694366976298, Energy/atom -3.62748996763754, Chi^2 0.32432930239677771, Alpha 10.0
+Evaluating individual 8
+Evaluated individual 8 on 25
+----Individual (8+38) Optimization----
+Energy per atom = -3.62484401294
+Individual '(8+38)': Fitness -0.56437968767400104, Energy/atom -3.624844012944984, Chi^2 0.30604643252709829, Alpha 10.0
+Evaluating individual 38
+Evaluated individual 38 on 26
+----Individual (38+8) Optimization----
+Energy per atom = -3.62649676375
+Individual '(38+8)': Fitness -0.79763590968989417, Energy/atom -3.6264967637540457, Chi^2 0.28288608540641513, Alpha 10.0
+Evaluating individual 34
+Evaluated individual 34 on 27
+----Individual (34+20)mR8 Optimization----
+Energy per atom = -3.62394919094
+Individual '(34+20)mR8': Fitness -0.26336928180298003, Energy/atom -3.6239491909385118, Chi^2 0.33605799091355315, Alpha 10.0
+Evaluating individual 20
+Evaluated individual 20 on 28
+----Individual (20+34) Optimization----
+Energy per atom = -3.62647508091
+Individual '(20+34)': Fitness -0.26408555163768721, Energy/atom -3.6264750809061486, Chi^2 0.33623895292684614, Alpha 10.0
+Evaluating individual 21
+Evaluated individual 21 on 29
+----Individual (21+18)mR89 Optimization----
+Energy per atom = -3.62246343042
+Individual '(21+18)mR89': Fitness -0.068486329023921488, Energy/atom -3.622463430420712, Chi^2 0.35539771013967908, Alpha 10.0
+Evaluating individual 18
+Evaluated individual 18 on 30
+----Individual (18+21)mR64 Optimization----
+Energy per atom = -3.62869190939
+Individual '(18+21)mR64': Fitness 0.23185286889280476, Energy/atom -3.628691909385113, Chi^2 0.38605447782779179, Alpha 10.0
+Evaluating individual 32
+Evaluated individual 32 on 31
+----Individual (32+15) Optimization----
+Energy per atom = -3.62197734628
+Individual '(32+15)': Fitness -0.00024788518691654104, Energy/atom -3.6219773462783174, Chi^2 0.36217294610914008, Alpha 10.0
+Evaluating individual 15
+Evaluated individual 15 on 32
+----Individual (15+32) Optimization----
+Energy per atom = -3.6204
+Individual '(15+32)': Fitness 0.043061978921873578, Energy/atom -3.6204, Chi^2 0.36634619789218736, Alpha 10.0
+Evaluating individual 16
+Evaluated individual 16 on 33
+----Individual (16+3) Optimization----
+Energy per atom = -3.62511067961
+Individual '(16+3)': Fitness -0.28293456388274585, Energy/atom -3.625110679611651, Chi^2 0.33421761157289048, Alpha 10.0
+Evaluating individual 3
+Evaluated individual 3 on 34
+----Individual (3+16) Optimization----
+Energy per atom = -3.62756990291
+Individual '(3+16)': Fitness -0.17282907044069074, Energy/atom -3.6275699029126214, Chi^2 0.34547408324719309, Alpha 10.0
+Evaluating individual 39
+Evaluated individual 39 on 35
+----Individual (39+12) Optimization----
+Energy per atom = -3.62502459547
+Individual '(39+12)': Fitness -0.19125708806130648, Energy/atom -3.6250245954692555, Chi^2 0.34337675074079488, Alpha 10.0
+Evaluating individual 12
+Evaluated individual 12 on 36
+----Individual (12+39) Optimization----
+Energy per atom = -3.61494660194
+Individual '(12+39)': Fitness -0.28393639257872572, Energy/atom -3.6149466019417473, Chi^2 0.33310102093630217, Alpha 10.0
+Evaluating individual 28
+Evaluated individual 28 on 37
+----Individual (28+8) Optimization----
+Energy per atom = -3.62596343042
+Individual '(28+8)': Fitness -0.10567155588514554, Energy/atom -3.625963430420712, Chi^2 0.35202918745355666, Alpha 10.0
+Evaluating individual 8
+Evaluated individual 8 on 38
+----Individual (8+28) Optimization----
+Energy per atom = -3.61553527508
+Individual '(8+28)': Fitness -0.58243647257687847, Energy/atom -3.615535275080906, Chi^2 0.30330988025040273, Alpha 10.0
+Evaluating individual 24
+Evaluated individual 24 on 39
+----Individual (24+8) Optimization----
+Energy per atom = -3.61990841424
+Individual '(24+8)': Fitness -0.1346135430897939, Energy/atom -3.619908414239482, Chi^2 0.34852948711496878, Alpha 10.0
+Evaluating individual 8
+Evaluated individual 8 on 40
+----Individual (8+24) Optimization----
+Energy per atom = -3.61953883495
+Individual '(8+24)': Fitness 0.34002101329541956, Energy/atom -3.6195388349514563, Chi^2 0.39595598482468758, Alpha 10.0
+Evaluating individual 4
+Evaluated individual 4 on 41
+----Individual (4+28) Optimization----
+Energy per atom = -3.6221433657
+Individual '(4+28)': Fitness -0.084578473133036791, Energy/atom -3.6221433656957926, Chi^2 0.35375648925627556, Alpha 10.0
+Evaluating individual 28
+Evaluated individual 28 on 42
+----Individual (28+4)mSTEM162 Optimization----
+Energy per atom = -2.87160190939
+Individual '(28+4)mSTEM162': Fitness 1.8873744420003948, Energy/atom -2.871601909385113, Chi^2 0.47589763513855077, Alpha 10.0
+Evaluated none individual on 43
+Evaluated none individual on 44
+Evaluated none individual on 45
+Evaluated none individual on 46
+Evaluated none individual on 47
+Evaluated none individual on 48
+Evaluated none individual on 49
+Evaluated none individual on 50
+Evaluated none individual on 51
+Evaluated none individual on 52
+Evaluated none individual on 53
+Evaluated none individual on 54
+Evaluated none individual on 55
+Evaluated none individual on 56
+Evaluated none individual on 57
+Evaluated none individual on 58
+Evaluated none individual on 59
+
+----Stats----
+  Min -0.79763590968989417
+  Max -0.22764241506192961
+  Avg -0.418251414557618
+  Medium -0.38365013165573547
+  Std 0.16412963824282376
+  Genrep 0
+
+--New Population--
+Individual 0
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = (38+8)
+    Energy = -1120.5875
+    Fitness = -0.79763590969
+Individual 1
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 0
+    Energy = -1118.283
+    Fitness = -0.78629544871
+Individual 2
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 1
+    Energy = -1120.2557
+    Fitness = -0.74481217962
+Individual 3
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 2
+    Energy = -1120.4932
+    Fitness = -0.734907122289
+Individual 4
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 3
+    Energy = -1120.5758
+    Fitness = -0.677502673143
+Individual 5
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 17mSTEM182
+    Energy = -1117.6232
+    Fitness = -0.676073965517
+Individual 6
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 4
+    Energy = -1119.4553
+    Fitness = -0.646627437259
+Individual 7
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 5
+    Energy = -1120.7781
+    Fitness = -0.636747082806
+Individual 8
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 6
+    Energy = -1120.3267
+    Fitness = -0.626121479854
+Individual 9
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 7
+    Energy = -1121.5876
+    Fitness = -0.623791768258
+Individual 10
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 8
+    Energy = -1118.0665
+    Fitness = -0.583776274351
+Individual 11
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = (8+28)
+    Energy = -1117.2004
+    Fitness = -0.582436472577
+Individual 12
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = (2+27)
+    Energy = -1118.4636
+    Fitness = -0.56697712358
+Individual 13
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = (8+38)
+    Energy = -1120.0768
+    Fitness = -0.564379687674
+Individual 14
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 9
+    Energy = -1121.1621
+    Fitness = -0.561876385805
+Individual 15
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 10
+    Energy = -1117.5132
+    Fitness = -0.558254633752
+Individual 16
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 11
+    Energy = -1119.9077
+    Fitness = -0.543635899914
+Individual 17
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 12
+    Energy = -1120.3266
+    Fitness = -0.534750914415
+Individual 18
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = (22+38)
+    Energy = -1120.8461
+    Fitness = -0.526657967264
+Individual 19
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = (0+28)
+    Energy = -1119.6222
+    Fitness = -0.492620323463
+Individual 20
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 13
+    Energy = -1116.9366
+    Fitness = -0.461818804616
+Individual 21
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = (27+0)
+    Energy = -1119.4327
+    Fitness = -0.448942335157
+Individual 22
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 14
+    Energy = -1118.5398
+    Fitness = -0.448854518554
+Individual 23
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = (50+13)
+    Energy = -1121.0521
+    Fitness = -0.435880923521
+Individual 24
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 15
+    Energy = -1118.8135
+    Fitness = -0.406817859604
+Individual 25
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 16
+    Energy = -1118.9195
+    Fitness = -0.398000139388
+Individual 26
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 17
+    Energy = -1121.2891
+    Fitness = -0.396488803506
+Individual 27
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 18
+    Energy = -1120.729
+    Fitness = -0.394222393871
+Individual 28
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = (0+27)
+    Energy = -1119.2287
+    Fitness = -0.388911793819
+Individual 29
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = (14+5)
+    Energy = -1120.8944
+    Fitness = -0.38419694367
+Individual 30
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 19
+    Energy = -1118.8801
+    Fitness = -0.383650131656
+Individual 31
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = (28+0)
+    Energy = -1115.5695
+    Fitness = -0.37432802651
+Individual 32
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 20
+    Energy = -1121.5871
+    Fitness = -0.362822793516
+Individual 33
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = (5+14)mZPR
+    Energy = -1120.5155
+    Fitness = -0.356193559923
+Individual 34
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 21
+    Energy = -1112.8813
+    Fitness = -0.341833417896
+Individual 35
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 22
+    Energy = -1120.2333
+    Fitness = -0.327818957596
+Individual 36
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 23
+    Energy = -1120.6652
+    Fitness = -0.320633577833
+Individual 37
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 24
+    Energy = -1120.2534
+    Fitness = -0.319979006275
+Individual 38
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 25
+    Energy = -1121.7006
+    Fitness = -0.298509283959
+Individual 39
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 26
+    Energy = -1119.38
+    Fitness = -0.293781493239
+Individual 40
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 27
+    Energy = -1119.4417
+    Fitness = -0.285184832327
+Individual 41
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = (12+39)
+    Energy = -1117.0185
+    Fitness = -0.283936392579
+Individual 42
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = (16+3)
+    Energy = -1120.1592
+    Fitness = -0.282934563883
+Individual 43
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 28
+    Energy = -1099.096
+    Fitness = -0.281989751548
+Individual 44
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 29
+    Energy = -1120.2183
+    Fitness = -0.279312624042
+Individual 45
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 30
+    Energy = -1120.9882
+    Fitness = -0.264232725554
+Individual 46
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = (20+34)
+    Energy = -1120.5808
+    Fitness = -0.264085551638
+Individual 47
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = (34+20)mR8
+    Energy = -1119.8003
+    Fitness = -0.263369281803
+Individual 48
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = (15+33)
+    Energy = -1120.5361
+    Fitness = -0.262100117051
+Individual 49
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 31
+    Energy = -1119.1244
+    Fitness = -0.247059913063
+Individual 50
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 32
+    Energy = -1120.4696
+    Fitness = -0.246289366091
+Individual 51
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 33
+    Energy = -1120.156
+    Fitness = -0.244542913817
+Individual 52
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 34
+    Energy = -1119.8509
+    Fitness = -0.242362845178
+Individual 53
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 35
+    Energy = -1119.9034
+    Fitness = -0.239508814014
+Individual 54
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 36
+    Energy = -1119.5882
+    Fitness = -0.239347654818
+Individual 55
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 37
+    Energy = -1119.6521
+    Fitness = -0.23819470532
+Individual 56
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 38
+    Energy = -1122.3176
+    Fitness = -0.23612969043
+Individual 57
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = (34+25)
+    Energy = -1122.55
+    Fitness = -0.229622217445
+Individual 58
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 39
+    Energy = -1119.9587
+    Fitness = -0.227672983746
+Individual 59
+Atoms(symbols='Au309', positions=..., cell=[23.0, 23.0, 23.0], pbc=[True, True, True])
+    Genealogy = 40
+    Energy = -1119.2656
+    Fitness = -0.227642415062
+
+----- Generation Stats -----
+Attempted Crossovers: 42
+Successful Crossovers: 18
+Mutations:
+    Attempted lattice_alteration : 0
+    Successful lattice_alteration : 0
+    Attempted lattice_alteration_group : 1
+    Successful lattice_alteration_group : 0
+    Attempted rotation : 4
+    Successful rotation : 1
+    Attempted stem_mutation : 2
+    Successful stem_mutation : 1
+    Attempted zp_rotation : 1
+    Successful zp_rotation : 1
+
