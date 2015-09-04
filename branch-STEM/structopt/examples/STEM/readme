@@ -1,9 +1,9 @@
 Au_u3.eam: potential file
 
-PSF.txt: pre-calculated PSF 
+PSF.txt: pre-calculated PSF, 976 x 976 pixels  
 
-STEM_ref: file including atomic coordinates of Au309 Ino-Decahedron structure
+STEM_ref: file including atomic coordinates of a Au309 Ino-Decahedron structure
 
-submit.sh
+submit.sh: 
 
 image.py: readin a strucutre, simulate STEM image using convolution method.  
